@@ -1,0 +1,6 @@
+settings.py
+.DS_Store
+*.swp
+*.swa
+__pycache__/
+
