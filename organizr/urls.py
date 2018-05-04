@@ -9,4 +9,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('todo.urls')),
     path('api-token-auth/', obtain_jwt_token),
+    path('api-auth/', include('rest_framework.urls')),
 ]

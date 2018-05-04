@@ -26,7 +26,7 @@ SECRET_KEY = '0d)yl8ikxx=#fladhqh_w2@41lfqdckau=9*s^srk2h#s#k@3i'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['10.0.8.110']
+ALLOWED_HOSTS = ['10.0.8.110', 'localhost']
 
 
 # Application definition
@@ -128,7 +128,9 @@ STATIC_URL = '/static/'
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES' : [
-        'rest_framework_jwt.authentication.JSONWebTokenAuthentication'
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
     ]
 }
 
