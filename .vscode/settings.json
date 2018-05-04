@@ -1,0 +1,4 @@
+{
+    "python.pythonPath": "/Users/syneto/.virtualenvs/todo-app/bin/python",
+    "python.linting.pylintArgs": ["--load-plugins", "pylint_django"]
+}
